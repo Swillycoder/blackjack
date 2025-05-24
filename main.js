@@ -242,7 +242,7 @@ function stick() {
 
     // Start revealing dealer cards with delay
     function revealNextCard() {
-        if ((dealerScore >= 17 && dealerScore > playerScore) || deck.length === 0) {
+        if ((dealerScore >= 17 && dealerScore >= playerScore) || deck.length === 0) {
             clearInterval(dealerInterval);
 
             // Delay result calculation
