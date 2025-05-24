@@ -208,8 +208,8 @@ function dealerScoreFunc() {
 function resultMsg(color, text) {
     ctx.fillStyle = 'white';
     ctx.strokeStyle = 'black';
-    ctx.fillRect(canvas.width/2 - 150,130,300,75);
-    ctx.strokeRect(canvas.width/2 - 150,130,300,75);
+    ctx.fillRect(canvas.width/2 - 150,130,300,60);
+    ctx.strokeRect(canvas.width/2 - 150,130,300,60);
 
     ctx.font = '50px Impact';
     ctx.fillStyle = color;
