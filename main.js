@@ -269,7 +269,7 @@ function stick() {
         dealerScore = calculateScore(dealerCards);
     }
 
-    const dealerInterval = setInterval(revealNextCard, 500); // 1 card every 500ms
+    const dealerInterval = setInterval(revealNextCard, 1000);
 }
 
 function resetGame() {
