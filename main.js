@@ -255,7 +255,7 @@ function stick() {
                     gameResult = 'draw';
                 }
                 gameOverTime = Date.now();
-            }, 500);
+            }, 1000);
             return;
         }
 
