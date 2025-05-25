@@ -238,11 +238,12 @@ function stick() {
 
     if (dealerCards[1]) {
         dealerCards[1].isFaceDown = false;
+        dealerScore = calculateScore(dealerCards);
     }
 
     // Start revealing dealer cards with delay
     function revealNextCard() {
-        if (dealerScore >= 17 || dealerScore >= playerScore || deck.length === 0) {
+        if (dealerScore >= 17) {
             clearInterval(dealerInterval);
 
             // Delay result calculation
@@ -269,7 +270,7 @@ function stick() {
         dealerScore = calculateScore(dealerCards);
     }
 
-    const dealerInterval = setInterval(revealNextCard, 1000);
+    dealerInterval = setInterval(revealNextCard, 1000);
 }
 
 function resetGame() {
